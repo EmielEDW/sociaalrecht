@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Admin · Sociaal Recht</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-title">Sociaal Recht<span class="subtitle">Admin</span></a>
+    <div class="header-actions">
+      <button class="theme-toggle">🌙 Donker</button>
+    </div>
+  </div>
+</header>
+<div class="layout" style="grid-template-columns:1fr;">
+  <main style="max-width:none;">
+    <div class="admin-box">
+      <h2 style="font-family:'Lora',serif;margin-top:0;">Device-reset</h2>
+      <p style="color:var(--text-soft);font-size:0.9rem;">Reset het aantal geregistreerde apparaten voor een code (bv. wanneer een koper een nieuw toestel heeft). Vereist je <code>ADMIN_SECRET</code>.</p>
+      <form id="adminForm">
+        <label for="secret">Admin secret</label>
+        <input type="password" id="secret" autocomplete="off" placeholder="ADMIN_SECRET">
+        <label for="code">Toegangscode</label>
+        <input type="text" id="code" autocomplete="off" placeholder="bv. 5KP3-X7QM">
+        <button type="submit">Reset apparaten</button>
+      </form>
+      <div class="admin-result" id="adminResult"></div>
+    </div>
+  </main>
+</div>
+<footer><p>Admin · <a href="index.html">terug naar start</a></p></footer>
+<script src="app.js"></script>
+<script>
+document.getElementById('adminForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const out = document.getElementById('adminResult');
+  const secret = document.getElementById('secret').value.trim();
+  const code = document.getElementById('code').value.trim();
+  if (!secret || !code) { out.textContent = 'Vul beide velden in.'; return; }
+  out.textContent = 'Bezig…';
+  try {
+    const r = await fetch('/api/admin-reset', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ secret, code }),
+    });
+    const data = await r.json().catch(() => ({}));
+    if (r.ok && data.ok) {
+      out.style.color = 'var(--tip-border)';
+      out.textContent = `✓ ${data.message} (was ${data.devicesBefore} apparaten)`;
+    } else {
+      out.style.color = '#c0392b';
+      out.textContent = '✗ ' + (data.error || data.message || `Fout (${r.status})`);
+    }
+  } catch (err) {
+    out.style.color = '#c0392b';
+    out.textContent = '✗ Netwerkfout: ' + err;
+  }
+});
+</script>
+</body>
+</html>

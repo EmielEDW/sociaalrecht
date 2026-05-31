@@ -1,0 +1,352 @@
+/* Flashcards page specific styles */
+
+.fc-header { margin-bottom: 1.6rem; }
+.fc-header h1 {
+  margin: 0 0 0.4rem;
+  font-family: 'Lora', serif;
+  font-size: 2rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.4rem;
+}
+.fc-lead { color: var(--text-soft); font-size: 0.98rem; }
+.fc-lead strong { color: var(--accent); }
+
+/* Stats row */
+.fc-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.7rem;
+  margin: 1.2rem 0;
+}
+.fc-stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.8rem 1rem;
+  text-align: center;
+}
+.fc-stat-value {
+  font-family: 'Lora', serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1.1;
+}
+.fc-stat-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-top: 0.3rem;
+}
+
+/* Controls */
+.fc-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.4rem;
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.fc-filter-group { flex: 1 1 60%; min-width: 280px; }
+.fc-filter-label {
+  display: block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+.fc-filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.fc-chip {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.32rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.83rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.12s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.fc-chip:hover { border-color: var(--accent); color: var(--accent); }
+.fc-chip.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+.fc-chip.locked {
+  opacity: 0.55;
+  color: var(--text-soft);
+  border-style: dashed;
+}
+.fc-chip.locked:hover {
+  opacity: 1;
+  border-style: solid;
+  border-color: #d4a649;
+  color: #b8852f;
+}
+.fc-chip-count {
+  font-size: 0.74rem;
+  opacity: 0.7;
+}
+.fc-chip.active .fc-chip-count { opacity: 0.85; }
+
+.fc-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 0 0 auto;
+}
+.fc-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.92rem;
+  cursor: pointer;
+}
+.fc-toggle input { width: 1rem; height: 1rem; accent-color: var(--accent); }
+.fc-toggle-help {
+  font-size: 0.85rem;
+  color: var(--muted);
+  cursor: help;
+}
+.fc-action-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: all 0.12s;
+}
+.fc-action-btn:hover { border-color: var(--accent); color: var(--accent); }
+.fc-action-btn.danger:hover { border-color: #c0392b; color: #c0392b; }
+
+/* Deck / Card */
+.fc-deck { margin: 1.5rem 0; }
+.fc-card-wrap {
+  perspective: 1500px;
+  margin-bottom: 1.2rem;
+}
+.fc-card {
+  position: relative;
+  width: 100%;
+  min-height: 360px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.55s cubic-bezier(.25, .8, .25, 1);
+  outline: none;
+}
+.fc-card.flipped { transform: rotateY(180deg); }
+.fc-card:focus { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 14px; }
+
+.fc-card-face {
+  position: absolute;
+  inset: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 2.2rem 2rem 1.5rem;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0,0,0,.07);
+  overflow: auto;
+}
+.fc-back {
+  transform: rotateY(180deg);
+  background: linear-gradient(to bottom right, var(--surface), var(--def-bg));
+}
+
+.fc-card-tag {
+  display: inline-block;
+  align-self: flex-start;
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1.2rem;
+}
+
+.fc-card-q {
+  font-family: 'Lora', serif;
+  font-size: 1.45rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--text);
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.fc-card-a {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text);
+  flex: 1;
+}
+.fc-card-a strong { color: var(--accent); font-weight: 600; }
+.fc-card-a ul, .fc-card-a ol { padding-left: 1.4rem; margin: 0.4rem 0; }
+.fc-card-a li { margin: 0.15rem 0; }
+.fc-card-a p { margin: 0.4rem 0; }
+
+.fc-card-hint {
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: auto;
+  padding-top: 1rem;
+}
+.fc-card-hint kbd {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.05rem 0.4rem;
+  font-size: 0.85em;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Navigation row */
+.fc-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.fc-nav-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.55rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.12s;
+  min-width: 110px;
+}
+.fc-nav-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.fc-nav-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.fc-counter {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  color: var(--text-soft);
+}
+
+/* Rating buttons */
+.fc-rating {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  margin: 1rem 0;
+}
+.fc-rate-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  border: 2px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+  position: relative;
+}
+.fc-rate-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,.08); }
+.fc-rate-btn .fc-rate-icon {
+  font-size: 1.2rem;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.fc-rate-btn.unknown:hover { border-color: #c0392b; color: #c0392b; }
+.fc-rate-btn.unknown .fc-rate-icon { background: #fde7e2; color: #c0392b; }
+.fc-rate-btn.known:hover { border-color: #2f7d32; color: #2f7d32; }
+.fc-rate-btn.known .fc-rate-icon { background: #e0f0e1; color: #2f7d32; }
+.fc-shortcut {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  font-size: 0.7rem;
+  color: var(--muted);
+  background: var(--code-bg);
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+}
+
+.fc-help {
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 1rem;
+}
+.fc-help kbd {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.1rem 0.4rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85em;
+}
+
+/* Empty state */
+.fc-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.fc-empty h2 { font-family: 'Lora', serif; }
+
+/* Dark theme adaptations */
+[data-theme="dark"] .fc-rate-btn.unknown .fc-rate-icon { background: #4a1e18; color: #ec7058; }
+[data-theme="dark"] .fc-rate-btn.known .fc-rate-icon { background: #1f3a22; color: #5cb35f; }
+
+/* Mobile */
+@media (max-width: 700px) {
+  .fc-stats { grid-template-columns: repeat(2, 1fr); }
+  .fc-card-q { font-size: 1.2rem; }
+  .fc-card-face { padding: 1.5rem 1.2rem 1rem; }
+  .fc-controls { flex-direction: column; }
+  .fc-actions { flex-direction: row; flex-wrap: wrap; }
+  .fc-rating { grid-template-columns: 1fr; }
+  .fc-nav-btn { min-width: 80px; padding: 0.5rem 0.7rem; font-size: 0.88rem; }
+  .fc-rate-btn .fc-rate-text { display: none; }
+  .fc-rate-btn { padding: 0.7rem; }
+  .fc-header h1 { font-size: 1.5rem; }
+  .fc-lead { font-size: 0.9rem; }
+}

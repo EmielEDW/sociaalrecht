@@ -1,0 +1,7 @@
+# Never commit plaintext codes or secrets
+codes-private.txt
+.env
+.env.local
+.vercel
+node_modules
+.DS_Store

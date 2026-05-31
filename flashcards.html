@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Flashcards Sociaal Recht — actief oefenen per deel, met voortgang.">
+<title>Flashcards · Sociaal Recht</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="flashcards.css">
+</head>
+<body>
+<div class="progress-bar"></div>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-title">Sociaal Recht<span class="subtitle">Samenvatting · HoGent · 2025-2026</span></a>
+    <div class="header-actions">
+      <span data-pack-status></span>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+      <button class="theme-toggle" aria-label="Thema">🌙 Donker</button>
+    </div>
+  </div>
+</header>
+<div class="sidebar-overlay"></div>
+<div class="layout">
+  <aside class="sidebar">
+    <nav>
+      <div class="sidebar-title">Samenvatting</div>
+      <a href="index.html"><span class="num">★</span>Start</a>
+      <a href="deel1-domein.html"><span class="num">1</span>Domein sociaal recht</a>
+      <a href="deel2-collectief.html"><span class="num">2</span>Collectieve arbeidsverhoudingen</a>
+      <a href="deel3-ao-begrippen.html"><span class="num">3</span>Individuele AO · begrippen 🔒</a>
+      <a href="deel4-schorsing-einde.html"><span class="num">4</span>Schorsing &amp; einde AO 🔒</a>
+      <a href="deel5-reglement-loon-arbeidswet.html"><span class="num">5</span>Reglement, loon &amp; arbeidswet 🔒</a>
+      <a href="deel6-welzijn.html"><span class="num">6</span>Welzijn op het werk 🔒</a>
+      <a href="deel7-sociale-zekerheid.html"><span class="num">7</span>Sociale zekerheid 🔒</a>
+      <div class="sidebar-title">Studeren</div>
+      <a href="kernpunten.html"><span class="num">≡</span>Kernpunten</a>
+      <a href="oefeningen.html"><span class="num">✎</span>Oefeningen 🔒</a>
+      <a href="flashcards.html" class="active"><span class="num">🃏</span>Flashcards</a>
+      <a href="quiz.html"><span class="num">?</span>Quiz</a>
+      <div class="sidebar-title">💎 Examen-pack</div>
+      <a href="examen-pack.html"><span class="num">P</span>💎 Examen-pack</a>
+    </nav>
+  </aside>
+  <main>
+    <header class="fc-header">
+      <h1>Flashcards</h1>
+      <p class="fc-lead"><strong>Gratis</strong>: Deel 1 (Domein) &amp; Deel 2 (Collectief). <strong>Pack</strong>: alle delen. <span id="fcTotalCount" style="opacity:0.7"></span></p>
+      <p class="fc-lead" style="margin-top:0.5rem;font-size:0.92rem;">Filter per deel, shuffle, of speel de "studie-modus" waarbij enkel de kaarten die je nog niet kent terugkomen. Voortgang wordt lokaal opgeslagen.</p>
+    </header>
+
+    <section class="fc-stats">
+      <div class="fc-stat-card"><div class="fc-stat-value" id="fcStatKnown">0</div><div class="fc-stat-label">Gekend</div></div>
+      <div class="fc-stat-card"><div class="fc-stat-value" id="fcStatUnknown">0</div><div class="fc-stat-label">Nog leren</div></div>
+      <div class="fc-stat-card"><div class="fc-stat-value" id="fcStatUnseen">0</div><div class="fc-stat-label">Niet gezien</div></div>
+      <div class="fc-stat-card"><div class="fc-stat-value" id="fcStatProgress">0%</div><div class="fc-stat-label">Voortgang</div></div>
+    </section>
+
+    <section class="fc-controls">
+      <div class="fc-filter-group">
+        <span class="fc-filter-label">Filter:</span>
+        <div class="fc-filter-chips" id="fcFilterChips"></div>
+      </div>
+      <div class="fc-actions">
+        <label class="fc-toggle">
+          <input type="checkbox" id="fcStudyMode">
+          <span>Studie-modus</span>
+          <span class="fc-toggle-help" title="Toon alleen kaarten die je nog niet hebt gekend">ⓘ</span>
+        </label>
+        <button class="fc-action-btn" id="fcShuffleBtn" title="Shuffle">🔀 Shuffle</button>
+        <button class="fc-action-btn danger" id="fcResetBtn" title="Reset voortgang">↺ Reset</button>
+      </div>
+    </section>
+
+    <section class="fc-deck" id="fcDeck">
+      <div class="fc-card-wrap">
+        <div class="fc-card" id="fcCard" tabindex="0" aria-label="Klik om om te draaien">
+          <div class="fc-card-face fc-front">
+            <div class="fc-card-tag" id="fcCardTag">…</div>
+            <div class="fc-card-q" id="fcCardQ">Bezig met laden…</div>
+            <div class="fc-card-hint">Klik op de kaart om het antwoord te zien · druk <kbd>spatie</kbd></div>
+          </div>
+          <div class="fc-card-face fc-back">
+            <div class="fc-card-tag" id="fcCardTagBack">…</div>
+            <div class="fc-card-a" id="fcCardA"></div>
+            <div class="fc-card-hint">Klik opnieuw om om te draaien</div>
+          </div>
+        </div>
+      </div>
+      <div class="fc-nav">
+        <button class="fc-nav-btn" id="fcPrevBtn" aria-label="Vorige">← Vorige</button>
+        <div class="fc-counter" id="fcCounter">0 / 0</div>
+        <button class="fc-nav-btn" id="fcNextBtn" aria-label="Volgende">Volgende →</button>
+      </div>
+      <div class="fc-rating">
+        <button class="fc-rate-btn unknown" id="fcUnknownBtn" aria-label="Ik wist het niet">
+          <span class="fc-rate-icon">✗</span><span class="fc-rate-text">Ik wist het niet</span><span class="fc-shortcut">1</span>
+        </button>
+        <button class="fc-rate-btn known" id="fcKnownBtn" aria-label="Ik wist het">
+          <span class="fc-rate-icon">✓</span><span class="fc-rate-text">Ik wist het</span><span class="fc-shortcut">2</span>
+        </button>
+      </div>
+      <div class="fc-help">
+        <strong>Sneltoetsen:</strong> <kbd>spatie</kbd> flippen · <kbd>←</kbd>/<kbd>→</kbd> navigeren · <kbd>1</kbd> niet gekend · <kbd>2</kbd> gekend
+      </div>
+    </section>
+
+    <section class="fc-empty" id="fcEmpty" hidden>
+      <h2>🎉 Niets meer te leren!</h2>
+      <p>Je hebt alle kaarten in deze selectie als gekend aangevinkt. Schakel "studie-modus" uit om alles te herhalen, of klik op <em>Reset</em>.</p>
+      <button class="fc-action-btn" onclick="document.getElementById('fcStudyMode').checked=false; document.getElementById('fcStudyMode').dispatchEvent(new Event('change'))">Toon alle kaarten</button>
+    </section>
+  </main>
+</div>
+<footer>
+  <p>Flashcards · <a href="index.html">terug naar start</a><br>Voortgang wordt enkel lokaal in je browser bewaard.</p>
+</footer>
+<script src="auth.js"></script>
+<script src="app.js"></script>
+<script src="flashcards.js"></script>
+<script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/_vercel/speed-insights/script.js"></script>
+</body>
+</html>

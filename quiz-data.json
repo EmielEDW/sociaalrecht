@@ -1,0 +1,487 @@
+{
+  "questions": [
+    {
+      "cat": "Deel 1 · Domein",
+      "q": "Uit welke twee grote takken bestaat het sociaal recht?",
+      "options": ["Burgerlijk recht en strafrecht", "Arbeidsrecht en socialezekerheidsrecht", "Publiekrecht en privaatrecht", "Individueel en collectief recht"],
+      "correct": 1,
+      "explanation": "Sociaal recht splitst zich op in arbeidsrecht en socialezekerheidsrecht. De andere paren zijn wel verwante onderscheidingen maar niet de definitie."
+    },
+    {
+      "cat": "Deel 1 · Domein",
+      "q": "Tot welke rechtstak behoort het arbeidsrecht?",
+      "options": ["Publiekrecht", "Strafrecht", "Privaatrecht", "Internationaal recht"],
+      "correct": 2,
+      "explanation": "Arbeidsrecht is privaatrecht (verhouding burgers onderling, WN-WG), terwijl socialezekerheidsrecht publiekrecht is (burger-overheid)."
+    },
+    {
+      "cat": "Deel 1 · Domein",
+      "q": "Welk grondwetsartikel verankert de sociale grondrechten (recht op arbeid en sociale zekerheid)?",
+      "options": ["Art. 6 WAO", "Art. 23 Gw.", "Art. 1781 BW", "Art. 415 Sw."],
+      "correct": 1,
+      "explanation": "Art. 23 Grondwet bevat de sociale grondrechten: punt 1 de arbeidsrechtelijke kern, punt 2 de basis van het socialezekerheidsrecht."
+    },
+    {
+      "cat": "Deel 1 · Domein",
+      "q": "Wat bepaalt art. 6 WAO over bedingen die strijdig zijn met de wet?",
+      "options": ["Ze zijn geldig mits schriftelijk", "Ze zijn nietig voor zover ze de rechten van de WN inkorten", "Ze gelden enkel voor bedienden", "Ze moeten door het PC goedgekeurd worden"],
+      "correct": 1,
+      "explanation": "Art. 6 WAO maakt strijdige bedingen nietig voor zover ze de rechten van de werknemer inkorten of zijn plichten verzwaren: dwingend, beschermend recht."
+    },
+    {
+      "cat": "Deel 1 · Domein",
+      "q": "Welke wet uit 1791 voerde de vrijheid van beroepskeuze en de vrije arbeidsmarkt in?",
+      "options": ["Wet Le Chapelier", "Decreet d'Allarde", "Wet op de arbeidsovereenkomsten", "Loonbeschermingswet"],
+      "correct": 1,
+      "explanation": "Het Decreet d'Allarde (1791) voerde de vrijheid van beroepskeuze in; de Wet Le Chapelier (1791) verbood juist de coalities/beroepsverenigingen."
+    },
+    {
+      "cat": "Deel 1 · Domein",
+      "q": "Wat wordt bedoeld met de '19de-eeuwse sociale kwestie'?",
+      "options": ["De financiering van de sociale zekerheid", "Het probleem van de miserabele werk- en leefomstandigheden van het arbeidersproletariaat", "De discussie over de 38-urenweek", "De erkenning van vakbonden in 1921"],
+      "correct": 1,
+      "explanation": "De sociale kwestie verwijst naar de wantoestanden (lange werktijden, lage lonen, kinderarbeid) van het arbeidersproletariaat, wat leidde tot sociale onrusten (1886)."
+    },
+    {
+      "cat": "Deel 1 · Domein",
+      "q": "Welke conclusie geldt over de aard van het arbeidsrecht?",
+      "options": ["Het is gewoon burgerlijk recht", "Het is uitzonderings- én beschermend recht voor de werknemer", "Het is volledig aanvullend recht", "Het is enkel publiekrecht"],
+      "correct": 1,
+      "explanation": "Arbeidsrecht is uitzonderingsrecht t.o.v. het burgerlijk recht én beschermend recht voor de werknemer (zie art. 6 WAO)."
+    },
+    {
+      "cat": "Deel 2 · Collectief",
+      "q": "Wat betekent 'paritair' in het kader van sociaal overleg?",
+      "options": ["Enkel werkgevers beslissen", "Werkgevers en werknemers zijn gelijk vertegenwoordigd", "De overheid heeft de meerderheid", "Vakbonden hebben twee derde van de zetels"],
+      "correct": 1,
+      "explanation": "Paritair betekent dat werkgevers (WG) en werknemers (WN) gelijk vertegenwoordigd zijn (WG = WN)."
+    },
+    {
+      "cat": "Deel 2 · Collectief",
+      "q": "Welke zijn de drie representatieve interprofessionele werknemersorganisaties?",
+      "options": ["VBO, Unizo, VOKA", "ABVV, ACV, ACLVB", "NAR, CRB, PC", "Agoria, Comeos, Febelfin"],
+      "correct": 1,
+      "explanation": "De drie grote vakbonden zijn ABVV (socialistisch), ACV (christelijk, grootste) en ACLVB (liberaal). VBO/Unizo/VOKA zijn werkgeversorganisaties."
+    },
+    {
+      "cat": "Deel 2 · Collectief",
+      "q": "Voor wie is een cao bij principiële binding o.a. bindend?",
+      "options": ["Enkel voor vakbondsleden", "Voor àlle werknemers van een gebonden werkgever, ook niet-vakbondsleden", "Enkel voor de ondertekenende organisaties", "Enkel na publicatie in het BS"],
+      "correct": 1,
+      "explanation": "Principiële binding strekt zich uit tot alle werknemers van een gebonden werkgever, ook niet-vakbondsleden. AVV vereist wel publicatie in het BS."
+    },
+    {
+      "cat": "Deel 2 · Collectief",
+      "q": "Wat is een gevolg van de algemeenverbindendverklaring (AVV) van een cao?",
+      "options": ["Afwijking via individuele AO blijft mogelijk", "Afwijking via individuele AO is niet meer mogelijk en inbreuk is een misdrijf", "Ze geldt enkel voor vakbondsleden", "Ze geldt voor onbepaalde duur zonder registratie"],
+      "correct": 1,
+      "explanation": "Bij AVV (bij KB, publicatie BS) is afwijking via individuele AO NIET meer mogelijk en is inbreuk een misdrijf. Dit verschilt van suppletieve binding."
+    },
+    {
+      "cat": "Deel 2 · Collectief",
+      "q": "Welk artikel regelt de hiërarchie van de rechtsbronnen in het arbeidsrecht?",
+      "options": ["Art. 18 WAO", "Art. 23 Gw.", "Art. 51 Cao-wet", "Art. 3 Cao-wet"],
+      "correct": 2,
+      "explanation": "Art. 51 Cao-wet (van 5 december 1968) bepaalt de rangorde van de rechtsbronnen; een lagere bron mag niet strijdig zijn met een hogere."
+    },
+    {
+      "cat": "Deel 2 · Collectief",
+      "q": "In de hiërarchie van rechtsbronnen: wat staat hoger?",
+      "options": ["Gebruik staat boven het arbeidsreglement", "De geschreven individuele AO staat boven de niet-AVV cao bij suppletieve binding", "Het arbeidsreglement staat boven AVV-cao's", "De mondelinge AO staat boven dwingend recht"],
+      "correct": 1,
+      "explanation": "De geschreven individuele AO (rang 4) staat boven de suppletief bindende niet-AVV cao (rang 5). Daarom kan men schriftelijk afwijken van zo'n cao."
+    },
+    {
+      "cat": "Deel 2 · Collectief",
+      "q": "Vanaf welke drempel moet een onderneming een Ondernemingsraad (OR) hebben?",
+      "options": ["Gewoonlijk gemiddeld 50 werknemers", "Gewoonlijk gemiddeld 100 werknemers", "Vanaf 25 werknemers", "Vanaf 10 werknemers"],
+      "correct": 1,
+      "explanation": "De OR is verplicht vanaf gewoonlijk gemiddeld 100 werknemers; het CPBW al vanaf 50 werknemers."
+    },
+    {
+      "cat": "Deel 2 · Collectief",
+      "q": "Een paritair comité waarvan het nummer met '3' begint, omvat...",
+      "options": ["Enkel arbeiders", "Enkel bedienden", "Arbeiders én bedienden (gemengd)", "Enkel uitzendkrachten"],
+      "correct": 2,
+      "explanation": "PC-nummers: 1 = arbeiders, 2 = bedienden, 3 = gemengd (arbeiders + bedienden). Bv. PC 302 = horeca, PC 310 = banken."
+    },
+    {
+      "cat": "Deel 2 · Collectief",
+      "q": "Welke uitspraak over de syndicale afvaardiging (SA) is juist?",
+      "options": ["De SA sluit zelf de cao's af", "De SA onderhandelt cao's, het afsluiten gebeurt door de vakorganisaties zelf", "De SA bestaat enkel in de overheidssector", "De SA wordt door de werkgever aangeduid"],
+      "correct": 1,
+      "explanation": "De SA onderhandelt cao's; het effectieve afsluiten gebeurt door de vakorganisaties. De SA wordt aangeduid door de leden (kaderregeling cao nr. 5)."
+    },
+    {
+      "cat": "Deel 3 · AO begrippen",
+      "q": "Wat is het onderscheidend criterium tussen een arbeidsovereenkomst en een zelfstandige aannemingsovereenkomst?",
+      "options": ["Het loon", "Het werkgeversgezag (ondergeschiktheid)", "De schriftelijke vorm", "De duur van de overeenkomst"],
+      "correct": 1,
+      "explanation": "Het werkgeversgezag/de ondergeschiktheid is hét onderscheidend criterium. Bij aanneming ontbreekt de gezagsverhouding."
+    },
+    {
+      "cat": "Deel 3 · AO begrippen",
+      "q": "Wat zijn de vier constitutieve bestanddelen van een arbeidsovereenkomst?",
+      "options": ["Schriftelijk contract, loon, duur, gezag", "Wederkerige overeenkomst, arbeid, loon, gezag", "Arbeid, vakantie, loon, anciënniteit", "Overeenkomst, opzeg, loon, gezag"],
+      "correct": 1,
+      "explanation": "De vier bestanddelen zijn: wederkerige overeenkomst, het verrichten van arbeid, loon en gezag van een werkgever (WAO 3 juli 1978)."
+    },
+    {
+      "cat": "Deel 3 · AO begrippen",
+      "q": "Een AO van bepaalde duur wordt gesloten zonder geschrift. Wat is het gevolg?",
+      "options": ["De AO is nietig", "De AO geldt als gesloten voor onbepaalde duur", "De AO blijft van bepaalde duur maar mondeling", "De AO wordt automatisch een vervangingsovereenkomst"],
+      "correct": 1,
+      "explanation": "Het geschrift (uiterlijk bij indiensttreding) is vormvereiste voor bepaalde duur. Ontbreekt het, dan geldt de AO voor onbepaalde duur (art. 9 WAO)."
+    },
+    {
+      "cat": "Deel 3 · AO begrippen",
+      "q": "Voor welke schade is de werknemer aansprakelijk volgens art. 18 WAO?",
+      "options": ["Voor elke fout, ook toevallige lichte fout", "Enkel voor bedrog, zware fout en gewoonlijk voorkomende lichte fout", "Enkel voor opzettelijke schade", "Voor alle schade aan derden"],
+      "correct": 1,
+      "explanation": "Art. 18 WAO geeft de WN gedeeltelijke immuniteit: enkel aansprakelijk bij bedrog, zware fout of gewoonlijk voorkomende lichte fout. Een toevallige lichte fout valt erbuiten."
+    },
+    {
+      "cat": "Deel 3 · AO begrippen",
+      "q": "Casus: een werknemer veroorzaakt eenmalig een lichte fout met schade bij een klant. Wie draagt de schade?",
+      "options": ["De werknemer betaalt alles", "De werkgever, want de WN geniet immuniteit voor toevallige lichte fout (art. 18)", "De klant zelf", "WN en WG ieder de helft"],
+      "correct": 1,
+      "explanation": "Bij een eenmalige (toevallige) lichte fout is de WN niet aansprakelijk dankzij de immuniteit van art. 18 WAO; de WG vergoedt de schade."
+    },
+    {
+      "cat": "Deel 3 · AO begrippen",
+      "q": "Casus Dirk: IT'er factureert al 3 jaar een vast maandbedrag aan één klant, prikt in en wordt wekelijks geëvalueerd door een leidinggevende. Wat is dit waarschijnlijk?",
+      "options": ["Een geldige zelfstandige samenwerking", "Schijnzelfstandigheid (feitelijk werkgeversgezag) → herkwalificatie", "Een vervangingsovereenkomst", "Een uitzendcontract"],
+      "correct": 1,
+      "explanation": "Vast bedrag, prikklok, wekelijkse evaluatie en geen andere klanten wijzen op werkgeversgezag → schijnzelfstandige. De werkelijkheid primeert op de kwalificatie; Dirk kan een verbrekingsvergoeding eisen."
+    },
+    {
+      "cat": "Deel 3 · AO begrippen",
+      "q": "Mag een werkgever zich contractueel het recht voorbehouden om de AO eenzijdig te wijzigen (bv. de functie)?",
+      "options": ["Ja, mits ondertekend door de WN", "Nee, zo'n beding is nietig (art. 25 WAO)", "Ja, bij economische redenen", "Enkel met akkoord van het PC"],
+      "correct": 1,
+      "explanation": "Een beding waarbij de WG zich het recht voorbehoudt essentiële voorwaarden eenzijdig te wijzigen is nietig (art. 25 WAO); de functie is een essentieel onderdeel."
+    },
+    {
+      "cat": "Deel 3 · AO begrippen",
+      "q": "Wat zijn de verjaringstermijnen voor vorderingen op basis van de WAO?",
+      "options": ["Altijd 10 jaar", "5 jaar tijdens de AO, max. 1 jaar na het einde ervan", "3 maanden na het feit", "Onbeperkt"],
+      "correct": 1,
+      "explanation": "Vorderingen verjaren 5 jaar na het feit, maar niet later dan 1 jaar na het einde van de AO (art. 15 WAO)."
+    },
+    {
+      "cat": "Deel 3 · AO begrippen",
+      "q": "Boven welke jaarloongrens (2025) is een concurrentiebeding voor een gewone WN geldig zónder dat een cao het hoeft toe te laten?",
+      "options": ["43.106 EUR", "32.254 EUR", "86.212 EUR", "Het is nooit geldig"],
+      "correct": 2,
+      "explanation": "Boven 86.212 EUR (2025) is het concurrentiebeding geldig tenzij een cao het uitsluit. Tussen 43.106 en 86.212 EUR enkel mits cao; onder 43.106 EUR nooit geldig."
+    },
+    {
+      "cat": "Deel 3 · AO begrippen",
+      "q": "Casus Johan: hij start op 1 maart, maar tekent het contract van bepaalde duur pas op 16 april. Wat kan hij arbeidsrechtelijk inroepen?",
+      "options": ["Het contract is nietig", "Hij kan argumenteren dat er een AO van onbepaalde duur bestaat", "Het contract blijft sowieso van bepaalde duur", "Hij heeft recht op een verbrekingsvergoeding van 3 maanden"],
+      "correct": 1,
+      "explanation": "Het geschrift voor bepaalde duur moet uiterlijk bij indiensttreding bestaan (art. 9 WAO). Laattijdige ondertekening → de AO geldt als gesloten voor onbepaalde duur."
+    },
+    {
+      "cat": "Deel 3 · AO begrippen",
+      "q": "Mag een cao of individuele AO afwijken van de Arbeidsovereenkomstenwet?",
+      "options": ["Nooit", "Ja, maar enkel in het voordeel van de werknemer", "Ja, ook in het nadeel van de WN mits ondertekend", "Enkel met toestemming van de inspectie"],
+      "correct": 1,
+      "explanation": "Afwijken kan, maar enkel in gunstige zin: niet de rechten van de WN verminderen of zijn plichten verzwaren (dwingend recht ten gunste van de WN)."
+    },
+    {
+      "cat": "Deel 4 · Schorsing & einde",
+      "q": "Wat gebeurt er bij schorsing van de arbeidsovereenkomst?",
+      "options": ["De AO eindigt definitief", "De gevolgen houden tijdelijk op, de AO zelf blijft bestaan", "De WN moet ontslag nemen", "Er volgt automatisch een verbrekingsvergoeding"],
+      "correct": 1,
+      "explanation": "Bij schorsing houden de gevolgen van de AO TIJDELIJK op; de overeenkomst zelf blijft bestaan, enkel de uitvoering wordt opgeschort."
+    },
+    {
+      "cat": "Deel 4 · Schorsing & einde",
+      "q": "Hoeveel dagen gewaarborgd loon geldt er bij ziekte/ongeval, en welk percentage betaalt de WG aan een arbeider in de tweede week (dag 8-14)?",
+      "options": ["30 dagen; 100 %", "30 dagen; 85,88 %", "14 dagen; 60 %", "60 dagen; 75 %"],
+      "correct": 1,
+      "explanation": "Gewaarborgd loon geldt max. 30 dagen. Voor arbeiders: dag 1-7 = 100 %, dag 8-14 = 85,88 %, dag 15-30 = 25,88 % (+ ZIV 60 %)."
+    },
+    {
+      "cat": "Deel 4 · Schorsing & einde",
+      "q": "Berekening: arbeider met dagloon 110 EUR, ziek van ma 20/1 t.e.m. do 30/1 (vijfdagenweek). Wat betaalt de WG?",
+      "options": ["5 × 110 + 4 × (0,8588 × 110) = 550 + 377,87 EUR", "10 × 110 EUR", "5 × 110 + 5 × 110 EUR", "Enkel het ziekenfonds betaalt"],
+      "correct": 0,
+      "explanation": "Dag 1-7 (ma 20/1 - vr 24/1: 5 werkdagen) = 5 × 110 = 550 EUR; dag 8-14 (ma 27/1 - do 30/1: 4 dagen) = 4 × 0,8588 × 110 = 377,87 EUR. Binnen 14 dagen betaalt het ziekenfonds niets."
+    },
+    {
+      "cat": "Deel 4 · Schorsing & einde",
+      "q": "Een arbeider is nog geen maand in dienst en wordt ziek. Wie betaalt?",
+      "options": ["De werkgever betaalt 30 dagen gewaarborgd loon", "De WG betaalt niets; het ziekenfonds (ZIV) betaalt 60 %", "Niemand betaalt", "De RVA betaalt een werkloosheidsuitkering"],
+      "correct": 1,
+      "explanation": "Gewaarborgd loon vereist min. 1 maand anciënniteit. Zonder die anciënniteit betaalt de WG niets en komt het ziekenfonds (ZIV) tussen aan 60 %."
+    },
+    {
+      "cat": "Deel 4 · Schorsing & einde",
+      "q": "Hoe lang duurt het verplichte deel van het moederschapsverlof rond de bevalling?",
+      "options": ["2 weken vóór en 4 weken ná", "1 week vóór en 9 weken ná de bevalling", "6 weken vóór en 6 weken ná", "Geen verplichte periode"],
+      "correct": 1,
+      "explanation": "Verbod op arbeid: 1 week verplicht vóór en 9 weken verplicht ná de bevalling. Prenataal 6 weken (5 facultatief), postnataal 9 weken verplicht."
+    },
+    {
+      "cat": "Deel 4 · Schorsing & einde",
+      "q": "Welke uitkering geldt tijdens het moederschapsverlof?",
+      "options": ["Loonbehoud door de WG", "Geen loonbehoud, wél ZIV-uitkering (eerste 30 dagen 82 %, daarna 75 %)", "RVA-werkloosheidsuitkering", "Een forfait van de werkgever"],
+      "correct": 1,
+      "explanation": "Geen loonbehoud, maar ZIV-uitkering: eerste 30 dagen 82 %, daarna 75 % (geplafonneerd)."
+    },
+    {
+      "cat": "Deel 4 · Schorsing & einde",
+      "q": "Binnen welke termijn moet een ontslag om dringende reden gegeven én gemotiveerd worden?",
+      "options": ["Binnen 7 kalenderdagen", "Telkens binnen 3 werkdagen (ontslag én motivering)", "Binnen 1 maand", "Binnen 2 maanden"],
+      "correct": 1,
+      "explanation": "Ontslag: binnen 3 werkdagen na zekere kennis van het feit; motivering schriftelijk binnen 3 werkdagen na het ontslag. Anders herkwalificatie naar gewoon ontslag met vergoeding."
+    },
+    {
+      "cat": "Deel 4 · Schorsing & einde",
+      "q": "Casus Julie: de WG zegt 'kom vanaf morgen niet meer'. Hoe kwalificeer je dit?",
+      "options": ["Een geldige opzegging met prestaties", "Verbreking (onmiddellijke stopzetting + opzeggingsvergoeding)", "Ontslag om dringende reden", "Einde door onderlinge toestemming"],
+      "correct": 1,
+      "explanation": "Onmiddellijke stopzetting zonder opzeggingstermijn = verbreking. De verbrekende partij betaalt een opzeggingsvergoeding gelijk aan het loon voor de opzegtermijn."
+    },
+    {
+      "cat": "Deel 4 · Schorsing & einde",
+      "q": "Wanneer eindigt de AO automatisch?",
+      "options": ["Bij overlijden van de WG", "Bij overlijden van de WN", "Bij faillissement van de WG", "Bij staking"],
+      "correct": 1,
+      "explanation": "Overlijden van de WN beëindigt de AO automatisch. Overlijden van de WG niet automatisch; faillissement schorst/beëindigt de AO evenmin van rechtswege."
+    },
+    {
+      "cat": "Deel 4 · Schorsing & einde",
+      "q": "Wanneer begint de opzeggingstermijn te lopen na schriftelijke kennisgeving?",
+      "options": ["De dag van kennisgeving zelf", "De maandag volgend op de week van de kennisgeving", "De eerste dag van de volgende maand", "Onmiddellijk bij verzending"],
+      "correct": 1,
+      "explanation": "De opzeggingstermijn vangt aan op de maandag volgend op de week van de kennisgeving. Het eenheidsstatuut (sinds 2014) drukt de termijn uit in weken naar anciënniteit."
+    },
+    {
+      "cat": "Deel 4 · Schorsing & einde",
+      "q": "Casus: opzegging gegeven door de WG; tijdens de termijn neemt de WN jaarlijkse vakantie. Wat gebeurt met de opzeggingstermijn?",
+      "options": ["De termijn loopt gewoon door", "De termijn wordt geschorst (loopt tijdelijk niet)", "De opzeg vervalt volledig", "De WN moet opnieuw opzeggen"],
+      "correct": 1,
+      "explanation": "Bij opzegging door de WG wordt de termijn geschorst tijdens schorsingsgronden zoals jaarlijkse vakantie. Bij opzegging door de WN loopt de termijn wél door."
+    },
+    {
+      "cat": "Deel 4 · Schorsing & einde",
+      "q": "Welke schadevergoeding voorziet cao nr. 109 bij kennelijk onredelijk ontslag?",
+      "options": ["6 maanden loon forfaitair", "3 tot 17 weken loon", "Dubbele opzeggingsvergoeding", "2 weken loon"],
+      "correct": 1,
+      "explanation": "Bij kennelijk onredelijk ontslag (cao nr. 109) kan de rechter 3 tot 17 weken loon toekennen. De boete van 2 weken loon geldt bij niet-antwoorden op de motiveringsvraag."
+    },
+    {
+      "cat": "Deel 4 · Schorsing & einde",
+      "q": "Wanneer is outplacement verplicht aan te bieden door de WG?",
+      "options": ["Bij elk ontslag", "Bij opzeg ≥ 30 weken, of bij ontslag van een WN ouder dan 45 met min. 1 jaar anciënniteit", "Enkel bij dringende reden", "Enkel voor bedienden"],
+      "correct": 1,
+      "explanation": "Outplacement is verplicht bij recht op een opzeggingstermijn van min. 30 weken, of bij ontslag van een WN ouder dan 45 jaar met min. 1 jaar anciënniteit."
+    },
+    {
+      "cat": "Deel 5 · Reglement/loon/arbeidswet",
+      "q": "Wat is de algemene grens voor de inhoudingen op het loon volgens de Loonbeschermingswet?",
+      "options": ["Maximaal de helft van het loon", "Maximaal 1/5 (één vijfde) van het loon", "Maximaal 1/3 van het loon", "Er is geen grens"],
+      "correct": 1,
+      "explanation": "Het totaal van de inhoudingen mag maximaal 1/5 van het loon bedragen (behoudens specifieke uitzonderingen, bv. opzettelijke schade)."
+    },
+    {
+      "cat": "Deel 5 · Reglement/loon/arbeidswet",
+      "q": "Welk van deze bedragen wordt NIET als loon beschouwd in de Loonbeschermingswet?",
+      "options": ["Fooien/bedieningsgeld", "In geld waardeerbare voordelen", "Vakantiegeld", "Loon in geld"],
+      "correct": 2,
+      "explanation": "Niet als loon: vakantiegeld, SZ-aanvullingen, winstpremies en de tussenkomst in het sociaal abonnement. Wél loon: geld, fooien en waardeerbare voordelen."
+    },
+    {
+      "cat": "Deel 5 · Reglement/loon/arbeidswet",
+      "q": "Wat is het verschil tussen overdracht en beslag op loon?",
+      "options": ["Beide zijn vrijwillig", "Overdracht is vrijwillig; beslag is gedwongen via een vonnis", "Overdracht is gedwongen; beslag is vrijwillig", "Er is geen verschil"],
+      "correct": 1,
+      "explanation": "Overdracht = de WN doet vrijwillig afstand van loon. Beslag = gedwongen afstand via een vonnis/gerechtsdeurwaarder."
+    },
+    {
+      "cat": "Deel 5 · Reglement/loon/arbeidswet",
+      "q": "Berekening beslag: nettoloon 1.700 EUR, geen kinderen. Het beslagbaar bedrag is 88,60 EUR. Hoeveel houdt de WN over?",
+      "options": ["1.700,00 EUR", "1.611,40 EUR", "1.388,00 EUR", "88,60 EUR"],
+      "correct": 1,
+      "explanation": "1.700 − 88,60 = 1.611,40 EUR netto. Het beslagbaar bedrag volgt uit de schijven (20 %, 30 %, 40 %) boven de beschermde ondergrens van 1.388 EUR."
+    },
+    {
+      "cat": "Deel 5 · Reglement/loon/arbeidswet",
+      "q": "In welk geval geldt de beslagbeperking (schijven) NIET en is het loon onbeperkt beslagbaar?",
+      "options": ["Bij een gewone schuld aan een bank", "Bij onderhoudsgeld (alimentatie)", "Bij belastingschulden", "Nooit"],
+      "correct": 1,
+      "explanation": "Voor onderhoudsschulden (alimentatie) gelden de gewone beslaggrenzen niet; het volledige loon kan dan in aanmerking komen."
+    },
+    {
+      "cat": "Deel 5 · Reglement/loon/arbeidswet",
+      "q": "Wat zijn de gewone dag- en weekgrenzen van de arbeidsduur (Arbeidswet 1971)?",
+      "options": ["10 uur/dag en 40 uur/week", "8 uur/dag en 38 uur/week", "12 uur/dag en 45 uur/week", "9 uur/dag en 36 uur/week"],
+      "correct": 1,
+      "explanation": "De gewone grenzen zijn 8 uur/dag en 38 uur/week, prestaties tussen 6u en 20u, met een minimumwerkperiode van 3 uur."
+    },
+    {
+      "cat": "Deel 5 · Reglement/loon/arbeidswet",
+      "q": "Hoeveel bedraagt het overloon voor overuren gepresteerd op een zondag of feestdag?",
+      "options": ["50 %", "75 %", "100 %", "150 %"],
+      "correct": 2,
+      "explanation": "Het overloon bedraagt 50 % op gewone dagen (week + zaterdag) en 100 % op zondag en feestdagen."
+    },
+    {
+      "cat": "Deel 5 · Reglement/loon/arbeidswet",
+      "q": "Wat is de interne overurengrens per trimester (sinds de Wet Peeters)?",
+      "options": ["78 uur", "143 uur", "100 uur", "38 uur"],
+      "correct": 1,
+      "explanation": "De interne overurengrens bedraagt 143 uur per trimester (vóór 2017 was dat 78 uur); bij overschrijding moet onmiddellijk inhaalrust worden toegekend."
+    },
+    {
+      "cat": "Deel 5 · Reglement/loon/arbeidswet",
+      "q": "Hoeveel wettelijke betaalde feestdagen zijn er per jaar?",
+      "options": ["8", "10", "12", "14"],
+      "correct": 1,
+      "explanation": "Er zijn 10 wettelijke betaalde feestdagen (Wet van 4 januari 1974). De WN behoudt zijn loon alsof er gewerkt werd."
+    },
+    {
+      "cat": "Deel 5 · Reglement/loon/arbeidswet",
+      "q": "Wat gebeurt er als een feestdag samenvalt met een zondag en er geen vervangingsdag is afgesproken?",
+      "options": ["De feestdag vervalt", "Automatisch de eerstvolgende gewone werkdag", "De WN krijgt dubbel loon", "Het PC beslist altijd individueel"],
+      "correct": 1,
+      "explanation": "Valt een feestdag op een zondag/inactiviteitsdag, dan wordt hij vervangen. Wordt er geen vervangingsdag bepaald (sector/onderneming), dan geldt automatisch de eerstvolgende gewone werkdag."
+    },
+    {
+      "cat": "Deel 5 · Reglement/loon/arbeidswet",
+      "q": "Hoeveel bedraagt het GGMMI (gewaarborgd gemiddeld minimummaandinkomen) vanaf 1/2/2025?",
+      "options": ["1.700,00 EUR", "2.111,89 EUR", "2.607,90 EUR", "3.000,00 EUR"],
+      "correct": 1,
+      "explanation": "Het GGMMI bedraagt 2.111,89 EUR vanaf 1/2/2025, vastgelegd door de sociale partners in de NAR; het geldt suppletief (vanaf 18 jaar)."
+    },
+    {
+      "cat": "Deel 5 · Reglement/loon/arbeidswet",
+      "q": "Op wie verschuift de bewijslast zodra een slachtoffer feiten aanvoert die discriminatie doen vermoeden?",
+      "options": ["Op het slachtoffer zelf", "Op de verweerder (werkgever)", "Op de arbeidsrechtbank", "Op Unia"],
+      "correct": 1,
+      "explanation": "De bewijslast verschuift gedeeltelijk: zodra het slachtoffer feiten aandraagt die een vermoeden van discriminatie scheppen, moet de verweerder (werkgever) bewijzen dat er géén discriminatie was."
+    },
+    {
+      "cat": "Deel 5 · Reglement/loon/arbeidswet",
+      "q": "Bij een flexibele arbeidsweek (kleine flexibiliteit): met hoeveel uur per dag mag de daggrens maximaal afwijken en wat is het dagmaximum?",
+      "options": ["1 uur, max. 8 uur", "2 uur, max. 9 uur", "3 uur, max. 11 uur", "5 uur, max. 12 uur"],
+      "correct": 1,
+      "explanation": "Bij kleine flexibiliteit mag de daggrens max. 2 uur afwijken (zonder 9 uur te overschrijden) en de weekgrens max. 5 uur (zonder 45 uur te overschrijden); gemiddelde over 12 maanden."
+    },
+    {
+      "cat": "Deel 6 · Welzijn",
+      "q": "Welke wet vormt het basiskader voor welzijn op het werk in België?",
+      "options": ["De Arbeidswet van 1971", "De Welzijnswet van 4 augustus 1996", "De Loonbeschermingswet van 1965", "De Cao-wet van 1968"],
+      "correct": 1,
+      "explanation": "De Welzijnswet van 4 augustus 1996 is het basiskader voor het welzijn van werknemers bij de uitvoering van hun werk."
+    },
+    {
+      "cat": "Deel 6 · Welzijn",
+      "q": "Uit hoeveel domeinen bestaat het begrip 'welzijn op het werk'?",
+      "options": ["3 domeinen", "5 domeinen", "7 domeinen", "10 domeinen"],
+      "correct": 2,
+      "explanation": "Welzijn omvat 7 domeinen, o.a. arbeidsveiligheid, gezondheid, psychosociale aspecten, ergonomie, arbeidshygiëne, verfraaiing van de werkplaats en milieumaatregelen."
+    },
+    {
+      "cat": "Deel 6 · Welzijn",
+      "q": "Wie staat de werkgever bij in het welzijnsbeleid en de risicoanalyse?",
+      "options": ["De vakbondsafgevaardigde", "De preventieadviseur", "De ondernemingsraad", "De RVA"],
+      "correct": 1,
+      "explanation": "De preventieadviseur (interne of externe dienst PBW) adviseert de werkgever inzake preventie en welzijn. Elke onderneming moet een interne dienst PBW hebben."
+    },
+    {
+      "cat": "Deel 6 · Welzijn",
+      "q": "Wat valt onder de psychosociale risico's op het werk?",
+      "options": ["Enkel fysieke ongevallen", "Stress, geweld, pesterijen en ongewenst seksueel gedrag", "Loonachterstand", "Te lange opzegtermijnen"],
+      "correct": 1,
+      "explanation": "Psychosociale risico's omvatten o.a. stress, burn-out, geweld, pesterijen en ongewenst seksueel gedrag. De werknemer kan terecht bij de preventieadviseur of vertrouwenspersoon."
+    },
+    {
+      "cat": "Deel 6 · Welzijn",
+      "q": "Welke maatregel heeft volgens de preventiehiërarchie de hoogste prioriteit?",
+      "options": ["Persoonlijke beschermingsmiddelen verstrekken", "Het risico aan de bron voorkomen/wegnemen", "Werknemers verzekeren tegen ongevallen", "Een waarschuwingsbord plaatsen"],
+      "correct": 1,
+      "explanation": "De preventiehiërarchie geeft voorrang aan het voorkomen/wegnemen van het risico aan de bron; collectieve maatregelen gaan vóór individuele beschermingsmiddelen (PBM), die het laatste vangnet zijn."
+    },
+    {
+      "cat": "Deel 7 · Sociale zekerheid",
+      "q": "Wat is het doel van de sociale zekerheid?",
+      "options": ["Winst maken voor de overheid", "Aan elke burger voldoende bestaansmiddelen waarborgen bij bepaalde sociale risico's", "Enkel pensioenen uitbetalen", "Lonen onderhandelen"],
+      "correct": 1,
+      "explanation": "Sociale zekerheid wil aan elke burger voldoende bestaansmiddelen waarborgen wanneer zijn bestaanszekerheid bedreigd wordt door bepaalde risico's, via een herverdelingsmechanisme."
+    },
+    {
+      "cat": "Deel 7 · Sociale zekerheid",
+      "q": "Hoeveel traditionele takken telt de sociale zekerheid?",
+      "options": ["3", "5", "7", "10"],
+      "correct": 2,
+      "explanation": "De 7 takken: pensioen, werkloosheid, arbeidsongevallen, beroepsziekten, gezinsbijslag, ziekte- en invaliditeit (ZIV) en jaarlijkse vakantie."
+    },
+    {
+      "cat": "Deel 7 · Sociale zekerheid",
+      "q": "Wat is het verschil tussen sociale zekerheid in enge en in brede zin?",
+      "options": ["Geen verschil", "Enge zin = verzekeringslogica (bv. werkloosheidsuitkering); brede zin = sociale bijstand (bv. leefloon via OCMW)", "Enge zin = leefloon; brede zin = pensioen", "Enge zin is enkel voor zelfstandigen"],
+      "correct": 1,
+      "explanation": "Enge zin = 'sociale zekerheid' (gekoppeld aan bijdragen/arbeid, bv. werkloosheidsuitkering). Brede zin = 'sociale bijstand' (residuair vangnet zonder bijdragen, bv. leefloon na sociaal onderzoek)."
+    },
+    {
+      "cat": "Deel 7 · Sociale zekerheid",
+      "q": "Hoeveel bedraagt de persoonlijke RSZ-bijdrage (werknemer) op het brutoloon?",
+      "options": ["± 25 %", "13,07 %", "20,5 %", "60 %"],
+      "correct": 1,
+      "explanation": "De persoonlijke RSZ-bijdrage van de werknemer bedraagt 13,07 % op het brutoloon. De patronale (werkgevers)bijdrage bedraagt ± 25 % bovenop het brutoloon."
+    },
+    {
+      "cat": "Deel 7 · Sociale zekerheid",
+      "q": "Wat is de juiste keten van loonkost naar nettoloon?",
+      "options": ["Nettoloon → bruto → belastbaar → loonkost", "Loonkost WG → brutoloon → belastbaar loon → nettoloon", "Brutoloon → loonkost → netto → belastbaar", "Belastbaar → bruto → netto → loonkost"],
+      "correct": 1,
+      "explanation": "Loonkost WG (bruto + patronale RSZ) → brutoloon → belastbaar loon (bruto − 13,07 % RSZ-WN) → nettoloon (belastbaar − bedrijfsvoorheffing)."
+    },
+    {
+      "cat": "Deel 7 · Sociale zekerheid",
+      "q": "Casus: je hebt inkomsten als zelfstandige in 2025. Op welk jaar zijn de voorlopige sociale bijdragen gebaseerd?",
+      "options": ["2025", "2024", "2023", "2026"],
+      "correct": 2,
+      "explanation": "De voorlopige bijdragen worden berekend op het inkomen van 3 jaar geleden (N−3), dus 2023. Na ± 2 jaar volgt een herziening/regularisatie op het werkelijke inkomen."
+    },
+    {
+      "cat": "Deel 7 · Sociale zekerheid",
+      "q": "Op welke rechten heeft een zelfstandige GEEN recht (in tegenstelling tot een werknemer)?",
+      "options": ["Pensioen en ziekteverzekering", "Werkloosheid, arbeidsongevallen en beroepsziekten", "Gezinsbijslag en moederschap", "Overbruggingsrecht"],
+      "correct": 1,
+      "explanation": "Zelfstandigen hebben geen recht op werkloosheid, arbeidsongevallen en beroepsziekten. Wél op ziekteverzekering, pensioen, gezinsbijslag/moederschap en het overbruggingsrecht."
+    },
+    {
+      "cat": "Deel 7 · Sociale zekerheid",
+      "q": "Wat is het bijdragepercentage voor een zelfstandige in hoofdberoep op de inkomensschijf 17.008,88 - 73.447,52 EUR?",
+      "options": ["13,07 %", "14,16 %", "20,5 %", "25 %"],
+      "correct": 2,
+      "explanation": "Op de schijf tot 73.447,52 EUR geldt 20,5 %; daarboven (tot 108.238,40 EUR) 14,16 %; boven het plafond 0 %. Min. bijdrage 871,71 EUR/kwartaal, max. 4.995,78 EUR."
+    },
+    {
+      "cat": "Deel 7 · Sociale zekerheid",
+      "q": "Welke instelling int de sociale bijdragen in het werknemersstelsel?",
+      "options": ["De RSVZ", "De RSZ (Rijksdienst voor de Sociale Zekerheid)", "Het ziekenfonds", "De FOD Financiën"],
+      "correct": 1,
+      "explanation": "De RSZ int en verdeelt de bijdragen in het werknemersstelsel. De RSVZ is de tegenhanger voor zelfstandigen. Uitbetaling verloopt vaak via ziekenfondsen, vakbonden, kassen en verzekeraars."
+    },
+    {
+      "cat": "Deel 7 · Sociale zekerheid",
+      "q": "Welke financieringstechniek gebruikt de Belgische sociale zekerheid?",
+      "options": ["Kapitalisatie (eigen spaarpot)", "Het omslagstelsel (repartitie)", "Private verzekering", "Belasting op consumptie"],
+      "correct": 1,
+      "explanation": "Het omslagstelsel (repartitie): de bijdragen van vandaag betalen onmiddellijk de huidige uitkeringen. Sociale bijdragen vormen ± 65 % van de financiering."
+    },
+    {
+      "cat": "Deel 7 · Sociale zekerheid",
+      "q": "Wat is het 'overbruggingsrecht' voor zelfstandigen?",
+      "options": ["Een werkloosheidsuitkering zoals bij werknemers", "Een tijdelijke uitkering bij stopzetting wegens faillissement, economische moeilijkheden of overmacht", "Een aanvullend pensioen", "Een belastingvermindering"],
+      "correct": 1,
+      "explanation": "Het overbruggingsrecht ('faillissementsverzekering') geeft een tijdelijke uitkering bij stopzetting wegens faillissement, collectieve schuldenregeling, economische moeilijkheden of overmacht."
+    }
+  ]
+}
