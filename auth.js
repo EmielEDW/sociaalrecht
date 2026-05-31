@@ -7,7 +7,7 @@
   const STORAGE_TOKEN_KEY = 'sr-pack-token-v2';
   const STORAGE_DEVICE_KEY = 'sr-pack-device-v1';
 
-  const STRIPE_LINK = 'STRIPE_PAYMENT_LINK_HERE';
+  const STRIPE_LINK = 'https://buy.stripe.com/eVqbJ01KxeWi9I87EOd3i02';
 
   // === Crypto helpers ===
   async function sha256Hex(text) {
