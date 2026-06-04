@@ -257,9 +257,32 @@
     getSavedCode, computeDeviceId,
   };
 
+  // Re-validate an already-unlocked session against the server.
+  // If the code was revoked, lock immediately (gating listeners re-apply live).
+  async function revalidate() {
+    if (!isUnlocked()) return;
+    const code = getSavedCode();
+    if (!code) return;
+    try {
+      const r = await fetch('/api/verify', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ code }),
+      });
+      if (!r.ok) return; // server hiccup → don't punish the user
+      const data = await r.json().catch(() => null);
+      if (data && data.valid === false) {
+        lock(); // emits 'lock' → gate.js / flashcards / quiz re-gate live
+      }
+    } catch (e) {
+      // offline / network error → keep current state
+    }
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     updateHeaderBadge();
     onChange(updateHeaderBadge);
+    revalidate();
 
     const url = new URL(window.location.href);
     const codeParam = url.searchParams.get('code');
