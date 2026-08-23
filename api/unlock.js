@@ -22,6 +22,13 @@ const HMAC_SECRET = process.env.HMAC_SECRET || 'fallback-please-change-this';
 const MAX_DEVICES = parseInt(process.env.MAX_DEVICES || '3', 10);
 const TOKEN_TTL_DAYS = parseInt(process.env.TOKEN_TTL_DAYS || '365', 10);
 
+// Mastercode(s): alleen als SHA-256 hash in de env-var, nooit in de repo.
+// Formaat: MASTER_CODE_HASH="<hash>" of meerdere, komma-gescheiden.
+// Een mastercode is altijd geldig (staat niet in valid-codes.json) en kent
+// geen device-limiet — bedoeld voor eigen gebruik / demo's / support.
+const MASTER_HASHES = String(process.env.MASTER_CODE_HASH || '')
+  .split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
+
 function sha256(s) { return createHash('sha256').update(s).digest('hex'); }
 function base64url(buf) {
   return Buffer.from(buf).toString('base64')
@@ -82,8 +89,19 @@ module.exports = async (req, res) => {
   if (code.length < 6) return res.status(400).json({ error: 'Code is te kort.' });
 
   const codeHash = sha256(validCodesData.salt + code);
-  if (!validCodesData.hashes.includes(codeHash)) {
+  const isMaster = MASTER_HASHES.includes(codeHash);
+
+  if (!isMaster && !validCodesData.hashes.includes(codeHash)) {
     return res.status(404).json({ error: 'Deze code is niet geldig.' });
+  }
+
+  // Mastercode: geen KV, geen device-tracking, geen limiet.
+  if (isMaster) {
+    const exp = Date.now() + TOKEN_TTL_DAYS * 24 * 60 * 60 * 1000;
+    const token = signToken({ ch: codeHash, did: deviceId, exp, master: true });
+    return res.status(200).json({
+      ok: true, token, master: true, devices: 1, maxDevices: null, isNewDevice: true,
+    });
   }
 
   if (!KV_URL || !KV_TOKEN) {

@@ -15,6 +15,9 @@ try {
   validCodesData = JSON.parse(fs.readFileSync(VALID_CODES_PATH, 'utf-8'));
 } catch (e) { console.error('verify: failed to load valid-codes.json', e); }
 
+const MASTER_HASHES = String(process.env.MASTER_CODE_HASH || '')
+  .split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
+
 function sha256(s) { return createHash('sha256').update(s).digest('hex'); }
 function normalizeCode(s) { return String(s || '').toUpperCase().replace(/[\s-]/g, ''); }
 
@@ -33,5 +36,6 @@ module.exports = async (req, res) => {
   if (!code) return res.status(200).json({ valid: false });
 
   const codeHash = sha256(validCodesData.salt + code);
-  return res.status(200).json({ valid: validCodesData.hashes.includes(codeHash) });
+  const valid = MASTER_HASHES.includes(codeHash) || validCodesData.hashes.includes(codeHash);
+  return res.status(200).json({ valid });
 };

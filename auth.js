@@ -118,6 +118,7 @@
       setUnlocked(norm, data.token, deviceId);
       return {
         ok: true,
+        master: !!data.master,
         devices: data.devices,
         maxDevices: data.maxDevices,
         isNewDevice: data.isNewDevice,
@@ -197,9 +198,11 @@
       const result = await unlock(code);
 
       if (result.ok) {
-        const devInfo = result.maxDevices
-          ? ` (${result.devices}/${result.maxDevices} apparaten gebruikt)`
-          : '';
+        const devInfo = result.master
+          ? ' (mastercode · onbeperkt apparaten)'
+          : result.maxDevices
+            ? ` (${result.devices}/${result.maxDevices} apparaten gebruikt)`
+            : '';
         fb.innerHTML = `✓ Code geactiveerd${devInfo}. Pagina wordt herladen…`;
         fb.className = 'unlock-feedback ok';
         setTimeout(() => { closeModal(); window.location.reload(); }, 1100);
